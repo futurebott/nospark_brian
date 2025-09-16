@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Spark – No Spark, No Problem</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+  }
+
+  section {
+    padding: 4em 2em;
+    background: white;
+  }
+
+  /* Updated banner background */
+  .banner {
+  color: #fff;
+  text-align: center;
+  padding: 6em 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Desktop-only background image */
+@media (min-width: 769px) {
+  .banner {
+    background: url('images/nospark.png') center center / cover no-repeat;
+  }
+}
+
+  .banner h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* for readability over image */
+  }
+
+  .banner p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  }
+
+  /* Navigation styles */
+  nav {
+    position: sticky;
+    top: 0;
+    background: #2e2e2e;
+    padding: 1em;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+  .spotlight {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .col-4 {
+    flex: 1 1 calc(33.333% - 1em);
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .button {
+    background: #ff4f4f;
+    color: white;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #2e2e2e;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 1em;
+    }
+    nav ul.showing {
+      display: flex;
+    }
+    .menu-toggle {
+      display: block;
+    }
+    .col-4 {
+      flex: 1 1 100%;
+    }
+    .banner .inner {
+    display: none;
+  }
+  }
+  .col-4 img {
+  height: 250px;         /* set the height you want */
+  width: 100%;           /* let them fill the column width */
+  border-radius: 4px;    /* optional, for rounded corners */
+}
+</style>
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="/" alt="favicon"> <img src="images/nospark100x70.png" height="100px" alt="logo" /></a>
+      <span class="menu-toggle">&#9776;</span>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#booking">Book Appointment</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="banner">
+      <div class="inner">
+        <h1>Spark</h1>
+        <p>No Spark, No Problem</p>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="spotlight">
+      <div class="inner">
+        <h2>Certifications</h2>
+        <div class="row">
+          <div class="col-4"><img src="images/Cert_Tech.png" alt="Cert 1" /></div>
+          <div class="col-4"><img src="images/mastertechnician.jpg" alt="Cert 2" /></div>
+          <div class="col-4"><img src="images/servicetechnician.jpg" alt="Cert 3" /></div>
+        </div>
+        <p>Certified by leading automotive authorities to ensure top‑quality service.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="spotlight" style="padding-top: 100px;">
+      <div class="inner">
+        <h2>Services Offered</h2>
+        <ul>
+          <li><strong>Diesel Engines</strong> – Full diagnostics and repair</li>
+          <li><strong>Petrol Engines</strong> – Tune‑ups and rebuilds</li>
+          <li><strong>Hybrid Systems</strong> – Battery and motor servicing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="spotlight">
+      <div class="inner">
+        <h2>Testimonials</h2>
+        <div class="row">
+          <div class="col-4">
+            <img src="images/c1.jpg" alt="Client 1" />
+            <p>"Spark fixed my engine in no time. Highly recommended!" – Alex</p>
+          </div>
+          <div class="col-4">
+            <img src="images/c2.jpg" alt="Client 2" />
+            <p>"Professional and reliable service." – Jamie</p>
+          </div>
+          <div class="col-4">
+            <img src="images/c3.jpg" alt="Client 3" />
+            <p>"They saved my road trip!" – Morgan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="spotlight">
+      <div class="inner">
+        <h2>Book an Appointment</h2>
+        <p>Booking means a technician will confirm your request and schedule a time.</p>
+        <a href="https://calendly.com" target="_blank" class="button">Book via Calendly</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="spotlight">
+      <div class="inner">
+        <h2>About Us</h2>
+        <img src="images/map.png" alt="Service Area" />
+        <p>Serving South of ajax, ON with expert engine services.</p>
+        <p><strong>Phone:</strong> (123) 456‑7890</p>
+        <p><strong>Email:</strong> contact@sparkengines.com</p>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('nav ul');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('showing');
+      });
+    </script>
+  </body>
+</html>
