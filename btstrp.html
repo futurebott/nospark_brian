@@ -94,6 +94,34 @@
       text-align: center;
       margin-top: 60px;
     }
+    /* Custom Slogan Banner */
+    .slogan-banner {
+      background-color: #e62020; /* Deep Red */
+      color: #ffeb3b;           /* Bright Yellow */
+      padding: 60px 20px;
+      text-align: center;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 5px solid #111; /* Adds a bit of depth */
+    }
+
+    .slogan-banner h2 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .slogan-banner h2 { font-size: 1.5rem; }
+    }
+    .checkmark {
+      color: #28a745; /* Green */
+      font-size: 1.2rem;
+      margin-right: 8px;
+      background-color: #d4edda; /* Light Green Background */
+    }
+    
   </style>
 </head>
 
@@ -122,15 +150,31 @@
       </div>
     </div>
   </nav>
-
+  <div class="slogan-banner">
+    <div class="container">
+      <h2>No start, no problem — we bring engines back to life.</h2>
+    </div>
+  </div>
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-overlay">
       <h1 class="display-5">Spark – Small Engine Repair</h1>
-      <p class="lead mt-3">
-        No start, no problem — we bring engines back to life.<br>
-        Gas engine repair up to 8 HP or 250cc.
-      </p>
+      
+      <div class="lead mt-3" style=" display: flex;
+ justify-content: center;   /* horizontal */
+    align-items: center;       /* vertical */
+">
+        <!-- No start, no problem — we bring engines back to life.<br> -->
+         <div style="text-align: left;">
+         <ul style="list-style-type: none;">
+          <li><span  class="checkmark"> &#10004;</span> B&S Pawnmowers under 10 hp</li>
+          <li><span class="checkmark"> &#10004;</span> B&S Portable generators</li>
+          <li><span class="checkmark"> &#10004;</span> B&S Snow blowers</li>
+          <li><span class="checkmark"> &#10004;</span>  Gas engine repair up to 8 HP or 250cc.</li>  
+        </ul>
+       </div>
+
+      </div>
       <a href="#appointment" class="btn btn-outline-light btn-lg mt-4">Book an Appointment</a>
     </div>
   </section>
@@ -149,7 +193,7 @@
    
     <div class="content-card text-center">
     <div class="section-title"></div>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDpj617WzOCq21TZVnZzH2nPRNknjoCntd-EbG7cthSOIUzQ/viewform?embedded=true" width="640" height="1149" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDpj617WzOCq21TZVnZzH2nPRNknjoCntd-EbG7cthSOIUzQ/viewform?embedded=true" width="640" height="100%">Loading…</iframe></div>
    </div>
   </div>
   </section>
