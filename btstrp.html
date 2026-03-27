@@ -340,8 +340,15 @@ Code examples
   /* customize formbutton below*/     
   formbutton("create", {
     action: "https://formspree.io/f/xdapaenr",
-    title: "How can we help?",
+    title: "How can I help?",
     fields: [
+      { 
+        type: "text", 
+        label: "Your Name:", 
+        name: "name",
+        required: true,
+        placeholder: "Your name"
+      },
       { 
         type: "email", 
         label: "Email:", 
@@ -351,9 +358,9 @@ Code examples
       },
       {
         type: "textarea",
-        label: "Message:",
+        label: "Proble description:",
         name: "message",
-        placeholder: "What's on your mind?",
+        placeholder: "Descibe your problem?",
       },
       { type: "submit" }      
     ],
@@ -367,11 +374,5 @@ Code examples
     }
   });
 </script>
-Resources
-Form setup guides
-Explore our help articles for setting up your form, covering everything from using a "reply to" address to integrating reCAPTCHA v3.
-
-More examples
-The Form Library is filled with example forms to get you started. Find everything from a contact form to an RSVP form, edit the code live, and download or copy/paste your work.
 </body>
 </html>
